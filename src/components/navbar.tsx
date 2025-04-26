@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { HiOutlineArrowSmRight } from "react-icons/hi"
 import Button from "./button";
+import { DownArrow } from "./svg/svg";
 
 
 
 export default function Navbar(){
     return (
-        <nav className="sticky top-0 p-4 max-w-[1500px] mx-auto font-dm-sans">
+        <nav className="sticky top-0 p-2 max-w-[1500px] mx-auto font-dm-sans backdrop-blur-2xl">
             <div className="flex justify-between items-center p-4">
                 <Image src={"/logo.png"} alt="logo" width={140} height={140} />
                 <ul className="flex justify-center text-[#FEFEFE] items-center gap-8 font-medium font-dm-sans">
@@ -25,8 +25,8 @@ export default function Navbar(){
                     <li>
                         Privacy Policy
                     </li>
-                    <li>
-                        More
+                    <li className="flex justify-center items-center gap-2">
+                        More {DownArrow}
                     </li>
                 </ul>
 

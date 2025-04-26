@@ -5,7 +5,7 @@ export default function AboutPage() {
     <main className="bg-hover">
       <div className="max-w-4xl mx-auto h-screen py-20">
         <h1 className="text-3xl text-primary-text mb-16">About us</h1>
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto text-primary-text">
           <div className="flex justify-between items-center gap-20 mb-20">
             <Image src={"/img1.png"} alt="img" width={150} height={400} className="backdrop-blur-2xl" />
             <h4 className="text-sm">
@@ -28,8 +28,8 @@ With a B.S. in Business Administration from UC Berkeley and 7+ years of experien
             </h4>
           </div>
         </div>
-        <h4 className="text-xs mx-82 mb-4">Learn more about our Board of Advisors​ ↗</h4>
-        <h4 className="text-xs mx-82">Follow us on our Linkedin page ↗</h4>
+        <h4 className="text-xs mx-82 mb-4 text-primary-text">Learn more about our Board of Advisors​ ↗</h4>
+        <h4 className="text-xs mx-82 text-primary-text">Follow us on our Linkedin page ↗</h4>
       </div>
     </main>
   );
