@@ -25,6 +25,9 @@ export default function CTA({
           What our client have to say
         </h2>
         <div className="flex justify-center gap-10 mb-12">
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
           {/* <VideoCard />
                 <VideoCard />
                 <VideoCard /> */}

@@ -17,7 +17,7 @@ export default function AboutPage() {
               alt="img"
               width={300}
               height={500}
-              className="backdrop-blur-2xl h-45 w-45"
+              className="backdrop-blur-2xl rounded-4xl h-45 w-45"
             />
             <h4 className="text-sm">
               Ashwin is the founder of mobiusengine.ai. He is an accomplished
@@ -35,7 +35,7 @@ export default function AboutPage() {
               alt="img"
               width={300}
               height={500}
-              className="backdrop-blur-2xl h-45 w-45"
+              className="backdrop-blur-2xl rounded-4xl h-45 w-45"
             />
             <h4 className="text-xs">
               Nicole is an Executive coach at Mobius specializing in resume
@@ -51,9 +51,15 @@ export default function AboutPage() {
             </h4>
           </div>
         </motion.div>
-        <div className="text-xs mx-[23rem] text-primary-text w-full">
-          <h4 className="mb-4">Learn more about our Board of Advisors​ ↗</h4>
-          <h4>Follow us on our Linkedin page ↗</h4>
+        <div className="text-xs mx-[23rem] cursor-pointer text-primary-text w-full">
+          <motion.h4
+          whileHover={{scale : 1.08}}
+          transition={{type:"spring", damping:10, stiffness:100}}
+          className="mb-4">Learn more about our Board of Advisors​ ↗</motion.h4>
+          <motion.h4
+          whileHover={{scale:1.08}}
+          transition={{type:"spring", damping:10, stiffness:100}}
+          >Follow us on our Linkedin page ↗</motion.h4>
         </div>
       </div>
     </main>
