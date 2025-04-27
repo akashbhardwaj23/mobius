@@ -1,19 +1,19 @@
 import { LinkedInSvg, LogoSvg } from "../svg/svg";
 import { FaLinkedin } from "react-icons/fa";
-
+import {motion} from "motion/react"
 
 
 
 export function Footer(){
     return (
-        <footer className="">
-            <div className="max-w-7xl mx-auto bg-white">
+        <footer className="bg-white">
+            <div className="max-w-7xl mx-auto">
 
-            <div className="mb-10">
+            <div className="mb-8">
                 {LogoSvg}
             </div>
             <hr className="w-64 text-[#BCBCBC]" />
-            <div className="mt-10 grid grid-cols-9 text-sm text-primary font-semibold mb-20">
+            <div className="mt-10 grid grid-cols-9 text-sm text-primary font-semibold mb-16">
                 <div className="col-span-5 flex justify-between gap-4">
                     <div>Address
                     <p className="max-w-48">1875 Mission St Ste 103 #450
@@ -28,7 +28,10 @@ export function Footer(){
                 </div>
                 <div className="col-span-4 flex justify-end">
                     <div>Socials
-                        <p><FaLinkedin className="size-10" /></p>
+                        <motion.p
+                        whileHover={{scale : 1.2}}
+                        transition={{type:"spring", damping:10, stiffness:100}}
+                        ><FaLinkedin className="size-10" /></motion.p>
                     </div>
                 </div>
             </div>            
