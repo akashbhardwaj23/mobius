@@ -1,7 +1,7 @@
 import Button from "../ui/button";
 import { Admin, checksvg, HandShake, Star } from "../svg/svg";
 import VideoCard from "../ui/videocard";
-import { motion, MotionValue } from "motion/react";
+import { motion } from "motion/react";
 
 const content = [
   "Curated jobs from 1M+ listings, refreshed every 48 hours",
@@ -11,13 +11,7 @@ const content = [
   "Personalized with up to 10 filters & 5 job titles",
 ];
 
-export default function CTA({
-  mouseX,
-  mouseY,
-}: {
-  mouseX: MotionValue<number>;
-  mouseY: MotionValue<number>;
-}) {
+export default function CTA() {
   return (
     <main className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto py-20">
@@ -28,9 +22,6 @@ export default function CTA({
           <VideoCard />
           <VideoCard />
           <VideoCard />
-          {/* <VideoCard />
-                <VideoCard />
-                <VideoCard /> */}
         </div>
 
         <div className="flex justify-center items-center gap-10 mb-20">
@@ -62,7 +53,6 @@ export default function CTA({
               title="Beat the Line"
               content="We search, shortlist, and apply for you, so your name shows up first — every single day."
             />
-            {/* <Card /> */}
           </div>
         </div>
 
@@ -135,18 +125,14 @@ function Card({
 }
 
 function CtaCard({
-  svg = true,
   content,
   price,
-  description,
   tag = false,
   title,
 }: {
-  svg?: boolean;
   title: string;
   tag?: boolean;
   price: string;
-  description?: string;
   content: string[];
 }) {
   return (
@@ -194,16 +180,12 @@ function CtaCard({
 }
 
 function CtaResumeCard({
-  svg = true,
   content,
   price,
   description,
-  tag = false,
   title,
 }: {
-  svg?: boolean;
   title: string;
-  tag?: boolean;
   price: string;
   description?: string;
   content: string[];

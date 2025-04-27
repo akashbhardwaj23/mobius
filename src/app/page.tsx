@@ -25,7 +25,7 @@ export default function Home() {
           <HeroSection />
           <WorkPage />
           <AboutPage />
-          <CTA mouseX={mouseX} mouseY={mouseY} />
+          <CTA />
           <Footer />
          </motion.main>
   )

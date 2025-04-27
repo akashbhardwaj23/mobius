@@ -1,4 +1,4 @@
-import { LinkedInSvg, LogoSvg } from "../svg/svg";
+import { LogoSvg } from "../svg/svg";
 import { FaLinkedin } from "react-icons/fa";
 import {motion} from "motion/react"
 

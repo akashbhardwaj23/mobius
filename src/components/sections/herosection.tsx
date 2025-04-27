@@ -2,9 +2,7 @@ import Image from "next/image";
 import Button from "../ui/button";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import {motion} from "motion/react"
-import { BookSvg, LeftArrow } from "../svg/svg";
-import { useEffect } from "react";
-
+import { LeftArrow } from "../svg/svg";
 
 const description = "Custom-built resumes that match your goals, keywords, and recruiter expectations."
 
@@ -12,7 +10,7 @@ export default function HeroSection() {
 
   const container = {
     hidden: { opacity: 0 },
-    visible: (i = 1) => ({
+    visible: () => ({
       opacity: 1,
       transition: { staggerChildren: 0.1, delayChildren: 0.2 },
     }),

@@ -24,8 +24,8 @@ export default function AboutPage() {
               senior executive with over 20 years of experience in cloud
               infrastructure and financial services. With over 2 decades of
               experience at Google and JP Morgan, Ashwin held various product
-              and GTM roles. Ashwin is an MBA holder from Yale University. ​
-              Ashwin's vision with Mobius is to give job seekers a significant
+              and GTM roles. Ashwin is an MBA holder from Yale University. 
+              Ashwin&apos;s vision with Mobius is to give job seekers a significant
               advantage in securing the roles of their dreams.
             </h4>
           </div>

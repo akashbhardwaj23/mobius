@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Button from "./ui/button";
 import { DownArrow } from "./svg/svg";
-import {motion, MotionValue} from "motion/react"
+import {motion} from "motion/react"
 import { useEffect, useRef, useState } from "react";
 
 
