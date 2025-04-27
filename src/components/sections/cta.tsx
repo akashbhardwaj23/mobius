@@ -2,6 +2,7 @@ import Button from "../ui/button";
 import { Admin, checksvg, HandShake, Star } from "../svg/svg";
 import VideoCard from "../ui/videocard";
 import { motion } from "motion/react";
+import React from "react";
 
 const content = [
   "Curated jobs from 1M+ listings, refreshed every 48 hours",
@@ -106,7 +107,7 @@ function Card({
   title,
   content,
 }: {
-  svg: JSX.Element;
+  svg: React.JSX.Element;
   title: string;
   content: string;
 }) {
